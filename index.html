@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiruLens</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h1>ChiruLens</h1>
+                <p>Professional Photo Editor</p>
+            </div>
+
+            <div class="upload-box">
+                <label for="upload">Click to Upload Image</label>
+                <input type="file" id="upload" accept="image/*">
+            </div>
+
+            <div class="tools">
+
+                <div class="tool">
+                    <label>Brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                </div>
+
+                <div class="tool">
+                    <label>Contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </div>
+
+                <div class="tool">
+                    <label>Saturation</label>
+                    <input type="range" id="saturation" min="0" max="200" value="100">
+                </div>
+
+                <div class="tool">
+                    <label>Blur</label>
+                    <input type="range" id="blur" min="0" max="20" value="0">
+                </div>
+
+                <div class="tool">
+                    <label>Rotate</label>
+                    <input type="range" id="rotate" min="0" max="360" value="0">
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button id="resetBtn">Reset</button>
+                <button id="downloadBtn">Download</button>
+            </div>
+
+        </aside>
+
+        <main class="editor">
+
+            <div class="image-container">
+                <img id="previewImage"
+                src="https://via.placeholder.com/1000x700?text=Upload+Your+Photo"
+                alt="">
+            </div>
+
+        </main>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
